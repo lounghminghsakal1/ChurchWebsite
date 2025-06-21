@@ -51,9 +51,9 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative bg-gradient-to-br from-blue-900 to-blue-700 text-white py-20"
+        className="relative bg-gradient-to-br from-sky-600 to-sky-800 text-white py-20"
         style={{
-          backgroundImage: 'linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.9)), url("https://images.pexels.com/photos/161089/church-building-religion-christian-161089.jpeg?auto=compress&cs=tinysrgb&w=1600")',
+          backgroundImage: 'linear-gradient(rgba(2, 132, 199, 0.8), rgba(3, 105, 161, 0.9)), url("https://images.pexels.com/photos/161089/church-building-religion-christian-161089.jpeg?auto=compress&cs=tinysrgb&w=1600")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -61,7 +61,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 font-serif">
             Welcome to<br />
-            <span className="text-yellow-400">St. Antony's Church</span>
+            <span className="text-sky-200">St. Antony's Church</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
             Illuppur - A place of faith, community, and worship where everyone is welcome
@@ -69,13 +69,13 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/services" 
-              className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
             >
               Book a Mass
             </a>
             <a 
               href="/about" 
-              className="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
+              className="border-2 border-white hover:bg-white hover:text-sky-800 px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
             >
               Learn More
             </a>
@@ -84,7 +84,7 @@ const Home = () => {
       </section>
 
       {/* Priest Information */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Parish Priest</h2>
@@ -92,26 +92,26 @@ const Home = () => {
           </div>
           
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-2xl p-8 shadow-lg">
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-sky-200">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex-shrink-0">
                   <img 
                     src="https://images.pexels.com/photos/6469142/pexels-photo-6469142.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
                     alt="Parish Priest"
-                    className="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg"
+                    className="w-32 h-32 rounded-full object-cover border-4 border-sky-200 shadow-lg"
                   />
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Rev. Fr. Michael Antony</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Rev. Fr. Eugine</h3>
                   <p className="text-lg text-gray-600 mb-4">Parish Priest</p>
                   <div className="space-y-2">
                     <div className="flex items-center justify-center md:justify-start space-x-2">
-                      <Phone className="h-5 w-5 text-blue-600" />
+                      <Phone className="h-5 w-5 text-sky-600" />
                       <span className="text-gray-700">+91 98765 43210</span>
                     </div>
                     <div className="flex items-center justify-center md:justify-start space-x-2">
-                      <Mail className="h-5 w-5 text-blue-600" />
-                      <span className="text-gray-700">fr.michael@stantonyschurch.org</span>
+                      <Mail className="h-5 w-5 text-sky-600" />
+                      <span className="text-gray-700">fr.eugine@stantonyschurch.org</span>
                     </div>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ const Home = () => {
       </section>
 
       {/* Ongoing Activities */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Ongoing Activities</h2>
@@ -139,12 +139,12 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {ongoingActivities.map((activity, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="text-blue-600 mb-4">
+              <div key={index} className="bg-gradient-to-br from-sky-50 to-sky-100 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-sky-200">
+                <div className="text-sky-600 mb-4">
                   {activity.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{activity.title}</h3>
-                <p className="text-blue-600 font-semibold mb-2">{activity.time}</p>
+                <p className="text-sky-600 font-semibold mb-2">{activity.time}</p>
                 <p className="text-gray-600">{activity.description}</p>
               </div>
             ))}
@@ -153,7 +153,7 @@ const Home = () => {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
@@ -162,9 +162,9 @@ const Home = () => {
           
           <div className="max-w-4xl mx-auto space-y-6">
             {upcomingEvents.map((event, index) => (
-              <div key={index} className="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-sky-200">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
-                  <div className="flex items-center space-x-2 text-blue-600">
+                  <div className="flex items-center space-x-2 text-sky-600">
                     <Calendar className="h-5 w-5" />
                     <span className="font-semibold">{event.date}</span>
                   </div>
@@ -180,7 +180,7 @@ const Home = () => {
       </section>
 
       {/* Church Photos */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Beautiful Church</h2>
@@ -232,7 +232,7 @@ const Home = () => {
           </div>
           
           <div className="text-center mt-8">
-            <button className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
+            <button className="inline-flex items-center space-x-2 bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200">
               <Camera className="h-5 w-5" />
               <span>View More Photos</span>
             </button>

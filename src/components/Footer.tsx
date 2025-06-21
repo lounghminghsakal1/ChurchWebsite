@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Church Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Church className="h-8 w-8 text-yellow-400" />
+              <Church className="h-8 w-8 text-sky-400" />
               <span className="font-bold text-xl">St. Antony's Church</span>
             </div>
             <p className="text-gray-300 mb-4">
@@ -59,16 +59,16 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <a href="/services" className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm">
+              <a href="/services" className="block text-gray-300 hover:text-sky-400 transition-colors text-sm">
                 Book a Mass
               </a>
-              <a href="/clubs-activities" className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm">
+              <a href="/clubs-activities" className="block text-gray-300 hover:text-sky-400 transition-colors text-sm">
                 Join Activities
               </a>
-              <a href="/about" className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm">
+              <a href="/about" className="block text-gray-300 hover:text-sky-400 transition-colors text-sm">
                 About Parish
               </a>
-              <a href="/branch-churches" className="block text-gray-300 hover:text-yellow-400 transition-colors text-sm">
+              <a href="/branch-churches" className="block text-gray-300 hover:text-sky-400 transition-colors text-sm">
                 Branch Churches
               </a>
             </div>

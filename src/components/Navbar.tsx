@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <Church className="h-8 w-8 text-blue-800" />
+              <Church className="h-8 w-8 text-sky-600" />
               <span className="font-bold text-xl text-gray-900">
                 St. Antony's Church
               </span>
@@ -38,8 +38,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   isActive(item.path)
-                    ? 'text-blue-800 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-800 hover:bg-blue-50'
+                    ? 'text-sky-600 bg-sky-50'
+                    : 'text-gray-700 hover:text-sky-600 hover:bg-sky-50'
                 }`}
               >
                 {item.label}
@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 hover:text-blue-800 hover:bg-gray-100"
+              className="p-2 rounded-md text-gray-700 hover:text-sky-600 hover:bg-gray-100"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -68,8 +68,8 @@ const Navbar = () => {
                   to={item.path}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                     isActive(item.path)
-                      ? 'text-blue-800 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-800 hover:bg-blue-50'
+                      ? 'text-sky-600 bg-sky-50'
+                      : 'text-gray-700 hover:text-sky-600 hover:bg-sky-50'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
